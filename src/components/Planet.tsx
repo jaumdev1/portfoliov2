@@ -3,17 +3,16 @@ import { useGLTF } from '@react-three/drei'
 import { GLTF, GLTFLoader } from 'three-stdlib'
 import {  useFrame, useLoader} from '@react-three/fiber';
 
-
 type GLTFResult = GLTF & {
   nodes: {
-    Object_Planet_0: THREE.Mesh
-  }
+    Object_Planet_0: THREE.Mesh;
+  };
   materials: {
-    Planet: THREE.MeshStandardMaterial
-  }
-}
-export default function Planet(props: JSX.IntrinsicElements['group']) {
+    Planet: THREE.MeshStandardMaterial;
+  };
+};
 
+export default function Planet(props: JSX.IntrinsicElements['group']) {
   const meshRef = useRef<THREE.Mesh | null>(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -29,13 +28,11 @@ export default function Planet(props: JSX.IntrinsicElements['group']) {
     };
   }, []);
 
+  const { nodes, materials } = useGLTF('/models/scene.glb') as GLTFResult;
 
-
-  const { nodes, materials } = useGLTF('../public/models/scene.gltf') as GLTFResult
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.001; 
-      
+      meshRef.current.rotation.y += 0.001;
     }
   });
 
@@ -45,10 +42,10 @@ export default function Planet(props: JSX.IntrinsicElements['group']) {
     materials.Planet.opacity = 0.1;
     materials.Planet.transparent = true;
   }
-  return (
 
-    <group {...props} dispose={null} >
-       <mesh ref={meshRef} geometry={nodes.Object_Planet_0.geometry} material={materials.Planet}rotation={[Math.PI, 0, Math.PI]} />
+  return (
+    <group {...props} dispose={null}>
+      <mesh ref={meshRef} geometry={nodes.Object_Planet_0.geometry} material={materials.Planet} rotation={[Math.PI, 0, Math.PI]} />
     </group>
-  )
+  );
 }
