@@ -1,8 +1,8 @@
-import * as THREE from 'three'
 import { useRef, useEffect, useState  } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { GLTF } from 'three-stdlib'
-import {  useFrame} from '@react-three/fiber';
+import { GLTF, GLTFLoader } from 'three-stdlib'
+import {  useFrame, useLoader} from '@react-three/fiber';
+
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -12,9 +12,6 @@ type GLTFResult = GLTF & {
     Planet: THREE.MeshStandardMaterial
   }
 }
-
-
-
 export default function Planet(props: JSX.IntrinsicElements['group']) {
 
   const meshRef = useRef<THREE.Mesh | null>(null);
@@ -31,6 +28,8 @@ export default function Planet(props: JSX.IntrinsicElements['group']) {
       window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
+
+
 
   const { nodes, materials } = useGLTF('../src/assets/models/scene.gltf') as GLTFResult
   useFrame(() => {
@@ -53,5 +52,3 @@ export default function Planet(props: JSX.IntrinsicElements['group']) {
     </group>
   )
 }
-
-useGLTF.preload('/../models/scene.gltf')
