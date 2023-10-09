@@ -31,7 +31,7 @@ export default function Planet(props: JSX.IntrinsicElements['group']) {
 
 
 
-  const { nodes, materials } = useGLTF('../src/assets/models/scene.gltf') as GLTFResult
+  const { nodes, materials } = useGLTF('../public/models/scene.gltf') as GLTFResult
   useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.001; 
