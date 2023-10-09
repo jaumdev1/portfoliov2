@@ -36,13 +36,13 @@ const CreateArticle: React.FC = () => {
     };
 
     createPlayground(playgroundData)
-      .then((result) => {
+      .then(() => {
         toast.success('Artigo criado com sucesso!', {
         position: toast.POSITION.BOTTOM_CENTER
       });
         navigate('/articles');
       })
-      .catch((error) => {
+      .catch(() => {
         toast.error('Erro ao criar Artigo.', {
           position: toast.POSITION.BOTTOM_CENTER
         });

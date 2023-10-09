@@ -46,13 +46,13 @@ const EditArticle: React.FC = () => {
     };
 
     editPlayground(playgroundData)
-    .then((result) => {
+    .then(() => {
       toast.success('Artigo editado com sucesso!', {
       position: toast.POSITION.BOTTOM_CENTER
     });
       navigate('/articles');
     })
-    .catch((error) => {
+    .catch(() => {
       toast.error('Erro ao editar Artigo.', {
         position: toast.POSITION.BOTTOM_CENTER
       });

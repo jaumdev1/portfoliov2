@@ -80,7 +80,7 @@ function Article() {
        listArticles.length == 0 ? <h1> nenhum registro encontrado!</h1>: <></>
      }
      
-      {listArticles.map((article, index) => (
+      {listArticles.map((article) => (
       <BannerArticle
         id={article.id.toString()} 
         title={article.title} 

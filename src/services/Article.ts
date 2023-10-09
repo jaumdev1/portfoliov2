@@ -13,7 +13,12 @@ interface  PlaygroundModel {
   Descricao: string;
   Imagem:string;
 }
+interface  PlaygroundModelCreate {
 
+  Nome: string;
+  Descricao: string;
+  Imagem:string;
+}
 interface BannerArticleProps {
   id:number;
   title: string;
@@ -99,7 +104,7 @@ export  async function buscarPlaygrounds(filtroplaygroundModel: filtroBuscarPlay
     }};
 
 
-export  async function createPlayground(playgroundModel: PlaygroundModel): Promise<any> {
+export  async function createPlayground(playgroundModel: PlaygroundModelCreate): Promise<any> {
   try {
     // Substitua a URL pelo seu endpoint real
     const apiUrl = `${config.apiUrl}/playground/criarPlayground`;

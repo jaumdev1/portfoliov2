@@ -1,13 +1,12 @@
 
-import SolarSystem from '../components/SolarSystem';
+
 import { Vector3 } from 'three';
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Auth }from '../services/Auth';
 function Login() {
-  const positions = new Vector3(0, 1.5, 0);
-  const moonPos  = new Array<number>(0,1.7,0);
+
 
   const [login, setLogin] = useState<string>(''); 
   const [password, setPassword] = useState<string>(''); 
