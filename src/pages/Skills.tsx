@@ -83,11 +83,7 @@ const Skills: React.FC = () => {
                                     <TbBrandAzure />
                                     Azure
                                 </div></li>
-                                <li className="mb-1 text-2xl">
-                                <div className="flex  items-center sm:justify-start justify-center gap-2">
-                                    <TbBrandAzure />
-                                    Azure
-                                </div></li>
+                              
                                 <li className="mb-1 text-2xl">
                                 <div className="flex  items-center sm:justify-start justify-center gap-2">
                                     <FaDocker />
