@@ -1,4 +1,4 @@
-# Portfóli
+# Portfólio
 Resumo
 
 Sou um Engenheiro de Software com habilidades abrangentes em desenvolvimento web e backend. Possuo experiência sólida em tecnologias como HTML5, CSS3, JavaScript, React, Node.js, C, C++, CSharp (.NET), AWS, Azure, Docker, Vim, JQuery, GO e JAVA demonstrando competência em ambientes diversificados.
