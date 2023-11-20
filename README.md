@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+# Portfóli
+Resumo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sou um Engenheiro de Software com habilidades abrangentes em desenvolvimento web e backend. Possuo experiência sólida em tecnologias como HTML5, CSS3, JavaScript, React, Node.js, C, C++, CSharp (.NET), AWS, Azure, Docker, Vim, JQuery, GO e JAVA demonstrando competência em ambientes diversificados.
 
-Currently, two official plugins are available:
+Título Profissional:
+Software Engineer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Expertise:
 
-## Expanding the ESLint configuration
+    Algoritmos e Estruturas de Dados
+    Programação Orientada a Objetos (OOP)
+    Padrões de Design
+    Arquitetura de Software
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Metodologias:
 
-- Configure the top-level `parserOptions` property like this:
+    Desenvolvimento Orientado a Testes (TDD)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Habilidades Adicionais:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    Desenvolvimento Backend com .NET / C#
+    Desenvolvimento Web com Angular, React.js, Vue.js, jQuery
+    Práticas avançadas: DDD, TDD, EF, Padrões de Design
+    Conhecimento em SQL Server e Oracle
+    Controle de código usando Git
+    Virtualização de ambientes com Docker
+    Comunicação efetiva em diversas áreas
